@@ -9,9 +9,9 @@ const CONFIG = {
     { text: '$ whoami', kind: 'prompt' },
     { text: '> กฤตยชญ์ กุลกลางดอน', kind: 'out' },
     { text: '$ target --position', kind: 'prompt' },
-    { text: '> Recruitment · เจ้าหน้าที่สรรหา', kind: 'out' },
+    { text: '> Project Coordinator · เจ้าหน้าที่ประสานงานโครงการ', kind: 'out' },
     { text: '$ skills --top', kind: 'prompt' },
-    { text: '> ประสานงาน · สื่อสาร · Excel · Google Apps Script', kind: 'out' }
+    { text: '> ประสานงาน · ติดตามงาน · รายงาน · Google Apps Script', kind: 'out' }
   ]
 };
 
@@ -127,7 +127,7 @@ const CONFIG = {
     const data = new FormData(form);
     const name = String(data.get('name') || '').trim();
     const message = String(data.get('message') || '').trim();
-    const subject = 'ติดต่อจากเว็บพอร์ตโฟลิโอ — ' + name;
+    const subject = 'ติดต่อจากพอร์ตโฟลิโอ Project Coordinator — ' + name;
     const body = message + '\n\nจาก: ' + name;
     window.location.href = 'mailto:' + CONFIG.email +
       '?subject=' + encodeURIComponent(subject) +
