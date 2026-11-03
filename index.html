@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>กฤตยชญ์ กุลกลางดอน — Portfolio</title>
+<meta name="description" content="พอร์ตโฟลิโอ กฤตยชญ์ กุลกลางดอน — สมัครตำแหน่ง Recruitment เจ้าหน้าที่สรรหา: ประสบการณ์ ผลงาน และช่องทางติดต่อ">
+<meta property="og:title" content="กฤตยชญ์ กุลกลางดอน — Portfolio">
+<meta property="og:description" content="สมัครตำแหน่ง Recruitment เจ้าหน้าที่สรรหา">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="ide-topbar">
+  <div class="brand"><span class="brand-bracket">&lt;</span><span class="brand-name">KK</span><span class="brand-bracket">/&gt;</span></div>
+  <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="ide-shell">
+
+  <nav class="sidebar" id="sidebar" aria-label="เมนูหลัก">
+    <div class="sidebar-brand">
+      <span class="brand-bracket">&lt;</span><span class="brand-name">KK</span><span class="brand-bracket">/&gt;</span>
+      <p class="sidebar-sub">// portfolio.md</p>
+    </div>
+    <ul class="file-tree">
+      <li><a href="#home" class="file-item active" data-target="home"><span class="file-icon">◆</span>home.md</a></li>
+      <li><a href="#projects" class="file-item" data-target="projects"><span class="file-icon">◆</span>projects.md</a></li>
+      <li><a href="#about" class="file-item" data-target="about"><span class="file-icon">◆</span>about.md</a></li>
+      <li><a href="#contact" class="file-item" data-target="contact"><span class="file-icon">◆</span>contact.md</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <button id="themeToggle" class="theme-toggle" aria-label="สลับธีมสว่าง/มืด">
+        <span class="theme-icon" id="themeIcon">☾</span><span id="themeLabel">Dark mode</span>
+      </button>
+      <p class="sidebar-hint"><span class="status-dot"></span> เริ่มงานได้ภายใน 7 วัน</p>
+    </div>
+  </nav>
+
+  <main class="editor-pane">
+    <div class="tab-strip">
+      <span class="tab active" data-tab="home">home.md</span>
+      <span class="tab" data-tab="projects">projects.md</span>
+      <span class="tab" data-tab="about">about.md</span>
+      <span class="tab" data-tab="contact">contact.md</span>
+    </div>
+
+    <div class="editor-body">
+      <div class="gutter" id="gutter" aria-hidden="true"></div>
+      <div class="content-scroll">
+
+        <!-- ============ HOME ============ -->
+        <section class="page active" id="home">
+          <div class="terminal-card reveal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">zsh — ~/portfolio</span>
+            </div>
+            <div class="terminal-body" id="typewriter" aria-label="แนะนำตัวสั้น ๆ"></div>
+          </div>
+
+          <div class="hero-grid reveal">
+            <div class="hero-photo-frame">
+              <span class="frame-tag">&lt;profile /&gt;</span>
+              <div class="hero-photo">
+                <span class="avatar-initials">KK</span>
+                <!-- วางรูปโปรไฟล์ที่ assets/profile.jpg แล้วรูปจะแสดงทับตัวอักษรย่อโดยอัตโนมัติ -->
+                <img src="assets/profile.jpg" alt="รูปโปรไฟล์ กฤตยชญ์ กุลกลางดอน" onerror="this.remove()">
+              </div>
+            </div>
+            <div class="hero-text">
+              <p class="eyebrow">// สวัสดีครับ ผมคือ</p>
+              <h1>กฤตยชญ์ กุลกลางดอน <span class="cursor-blink">|</span></h1>
+              <p class="role">สมัครตำแหน่ง Recruitment · เจ้าหน้าที่สรรหา</p>
+              <p class="bio">
+                จบรัฐศาสตร์ มหาวิทยาลัยรามคำแหง (2563) มีประสบการณ์งานที่ต้องสื่อสารกับคนจำนวนมากและประสานงานหลายฝ่าย
+                ตั้งแต่รับสายให้ข้อมูลประกันสังคม ดูแลงานหน้าร้าน ไปจนถึงติดตามงานภาคสนามร่วมกับผู้นำชุมชน
+                สนใจงานสรรหาบุคลากร และใช้ Excel กับ Google Apps Script ช่วยให้การติดตามข้อมูลเป็นระบบ
+              </p>
+              <div class="fact-row">
+                <div class="fact"><span>ตำแหน่งที่สมัคร</span>Recruitment</div>
+                <div class="fact"><span>พื้นที่ทำงาน</span>กทม. ทุกเขต / ต่างจังหวัดได้</div>
+                <div class="fact"><span>เริ่มงานได้</span>ภายใน 7 วัน</div>
+              </div>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary" data-target="projects">ดูผลงาน →</a>
+                <a href="#contact" class="btn btn-ghost" data-target="contact">ติดต่อผม</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="page" id="projects">
+          <p class="eyebrow reveal">// projects.md</p>
+          <h2 class="reveal">ผลงานเด่น</h2>
+          <p class="section-sub reveal">งานฟรีแลนซ์ที่ผมลงมือทำเอง แสดงการรับโจทย์จากผู้ใช้งานจริง ติดตามข้อมูล และส่งมอบงานตามที่ตกลง</p>
+
+          <div class="project-grid">
+
+            <article class="project-card reveal">
+              <!-- ใส่รูป/วิดีโอจริงได้ที่ data-media เช่น "assets/queue.png" หรือ "assets/queue.mp4" -->
+              <div class="project-media" data-media="">
+                <div class="cover cover-a">QUEUE</div>
+              </div>
+              <div class="project-body">
+                <div class="project-diff"><span class="diff-add">+ ระบบจองคิวบริการตัดหญ้า (อบต.)</span></div>
+                <dl class="project-facts">
+                  <dt>โจทย์</dt><dd>รับจองคิวตัดหญ้ารายหมู่บ้าน โดยต้องไม่ซ้ำกับคิวที่มีและหลีกเลี่ยงวันเสาร์-อาทิตย์</dd>
+                  <dt>บทบาท</dt><dd>ออกแบบและพัฒนาคนเดียวตั้งแต่เก็บความต้องการจนส่งมอบ</dd>
+                  <dt>สิ่งที่ส่งมอบ</dt><dd>แบบฟอร์มที่ตรวจวันและคิวชนกันอัตโนมัติ พร้อมอีเมลแจ้งเจ้าหน้าที่</dd>
+                </dl>
+                <div class="tag-row"><span class="tag">Google Forms</span><span class="tag">Apps Script</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media" data-media="">
+                <div class="cover cover-b">QR</div>
+              </div>
+              <div class="project-body">
+                <div class="project-diff"><span class="diff-add">+ บัตร QR รับฟีดแบ็กลูกค้า (ร้านขายยา 2 สาขา)</span></div>
+                <dl class="project-facts">
+                  <dt>โจทย์</dt><dd>ให้ลูกค้าสแกนแล้วส่งความคิดเห็นถึงร้านได้สะดวก</dd>
+                  <dt>บทบาท</dt><dd>ออกแบบและสร้างบัตรทั้ง 2 สาขาด้วยตัวเอง</dd>
+                  <dt>สิ่งที่ส่งมอบ</dt><dd>บัตร QR ที่สร้างด้วยโค้ดและตรวจแล้วว่าสแกนได้จริงก่อนส่งงาน</dd>
+                </dl>
+                <div class="tag-row"><span class="tag">Python (PIL)</span><span class="tag">OpenCV</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media" data-media="">
+                <div class="cover cover-c">EXAM</div>
+              </div>
+              <div class="project-body">
+                <div class="project-diff"><span class="diff-add">+ ระบบฝึกทำข้อสอบ ก.พ. ออนไลน์</span></div>
+                <dl class="project-facts">
+                  <dt>โจทย์</dt><dd>ระบบฝึกทำข้อสอบแบบจับเวลา แยกสิทธิ์ผู้ใช้และผู้ดูแล</dd>
+                  <dt>บทบาท</dt><dd>พัฒนาทั้งระบบคนเดียว</dd>
+                  <dt>สิ่งที่ส่งมอบ</dt><dd>ระบบล็อกอินหลายสิทธิ์ ข้อสอบจับเวลา โหมดฝึกแยกหมวด และหน้าผู้ดูแล</dd>
+                </dl>
+                <div class="tag-row"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Supabase</span></div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="page" id="about">
+          <p class="eyebrow reveal">// about.md</p>
+          <h2 class="reveal">ทักษะและประสบการณ์</h2>
+
+          <div class="about-grid">
+            <div class="package-card reveal">
+              <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">skills.json</span>
+              </div>
+              <pre class="package-body"><code>{
+  <span class="tok-key">"สื่อสาร/ให้ข้อมูล"</span>: <span class="tok-str">"รับสายประกันสังคม"</span>,
+  <span class="tok-key">"ประสานงาน"</span>: <span class="tok-str">"แขวง มก. / ชุมชน"</span>,
+  <span class="tok-key">"รายงาน"</span>: <span class="tok-str">"สรุปยอดขาย, รายงานนำเสนอ"</span>,
+  <span class="tok-key">"office"</span>: [<span class="tok-str">"Word"</span>, <span class="tok-str">"PowerPoint"</span>, <span class="tok-str">"Excel"</span>],
+  <span class="tok-key">"automation"</span>: [<span class="tok-str">"Google Forms"</span>, <span class="tok-str">"Apps Script"</span>],
+  <span class="tok-key">"english"</span>: <span class="tok-str">"พอใช้"</span>
+}
+<span class="tok-comment">// ทุกทักษะมีงานรองรับใน career.log ด้านขวา</span></code></pre>
+            </div>
+
+            <div class="commit-log reveal">
+              <p class="log-title">$ cat career.log</p>
+              <ul>
+                <li>
+                  <span class="commit-hash">2568</span>
+                  <span class="commit-msg"><strong>เจ้าหน้าที่ให้บริการข้อมูลโครงการภาครัฐ</strong> · ทรูทัช<small>รับสายให้ข้อมูลประกันสังคม เช่น กรณีว่างงาน เงินชดเชยเยียวยา สิทธิรักษาพยาบาล</small></span>
+                  <span class="commit-date">พ.ค.–ก.ค.</span>
+                </li>
+                <li>
+                  <span class="commit-hash">2566</span>
+                  <span class="commit-msg"><strong>Shop Supervisor</strong> · เซ็นทรัล รีเทล คอร์ปอเรชั่น<small>ช่วยผู้จัดการวางแผนงานในร้าน ดูแลการรับสินค้า สรุปยอดขายประจำวันของพนักงาน และรายงานปัญหาให้ผู้จัดการ</small></span>
+                  <span class="commit-date">พ.ค.–ก.ค.</span>
+                </li>
+                <li>
+                  <span class="commit-hash">2565</span>
+                  <span class="commit-msg"><strong>ผู้ประสานงานแขวง</strong> · มหาวิทยาลัยเกษตรศาสตร์<small>แบ่งภาระงาน ติดตามความคืบหน้า และส่งงานของแขวงให้คณะกรรมการส่วนกลาง</small></span>
+                  <span class="commit-date">ก.ค.–ก.ย.</span>
+                </li>
+                <li>
+                  <span class="commit-hash">2564</span>
+                  <span class="commit-msg"><strong>โครงการบัณฑิตจบใหม่</strong> · มหาวิทยาลัยเกษตรศาสตร์<small>ติดตามและประสานงานปัญหาที่พักอาศัยร่วมกับประธานหมู่บ้าน บันทึกข้อมูลและทำรายงานนำเสนอ</small></span>
+                  <span class="commit-date">11 เดือน</span>
+                </li>
+                <li>
+                  <span class="commit-hash">2549–61</span>
+                  <span class="commit-msg"><strong>งานบริการและค้าปลีก</strong><small>ร้านอาหาร, 7-Eleven, Jiffy — ดูแลลูกค้าหน้าร้าน แคชเชียร์ ตรวจสต็อก</small></span>
+                  <span class="commit-date">หลายแห่ง</span>
+                </li>
+              </ul>
+              <p class="edu-line">การศึกษา: รัฐศาสตร์ มหาวิทยาลัยรามคำแหง (2563)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="page" id="contact">
+          <p class="eyebrow reveal">// contact.md</p>
+          <h2 class="reveal">ติดต่อผม</h2>
+          <p class="section-sub reveal">สนใจนัดสัมภาษณ์หรือสอบถามเพิ่มเติม ติดต่อได้ตามช่องทางด้านล่าง</p>
+
+          <div class="contact-grid">
+            <form class="terminal-card reveal contact-form" id="contactForm">
+              <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">send-message.sh</span>
+              </div>
+              <div class="terminal-body">
+                <label class="prompt-line"><span class="prompt">$ name --set</span><input type="text" name="name" placeholder="ชื่อของคุณ / บริษัท" required></label>
+                <label class="prompt-line"><span class="prompt">$ message --set</span><textarea name="message" rows="4" placeholder="ตำแหน่งที่เปิดรับ หรือรายละเอียดที่อยากสอบถาม" required></textarea></label>
+                <button type="submit" class="btn btn-primary btn-block">$ send --submit</button>
+                <p class="form-note">กดแล้วจะเปิดแอปอีเมลของคุณพร้อมข้อความที่กรอก</p>
+              </div>
+            </form>
+
+            <div class="social-list reveal">
+              <a href="mailto:kunklangdon@gmail.com" class="social-item"><span class="file-icon">◆</span><span>kunklangdon@gmail.com</span></a>
+              <a href="tel:0910787047" class="social-item"><span class="file-icon">◆</span><span>091-078-7047</span></a>
+              <a href="https://www.facebook.com/kridtayod" class="social-item" target="_blank" rel="noopener"><span class="file-icon">◆</span><span>facebook.com/kridtayod</span></a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <p>// สร้างด้วย HTML · CSS · JavaScript ล้วน — โฮสต์บน GitHub Pages</p>
+        </footer>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="spa.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
