@@ -304,3 +304,76 @@ html[data-theme="light"] .btn-primary{ color:#fff; }
   .content-scroll{ padding: 28px 20px 60px; }
   .tab-strip{ display:none; }
 }
+
+/* ============================================
+   v3 ADDITIONS: skip link, projects list, skills, timeline
+   ============================================ */
+.skip-link{
+  position:fixed; left:12px; top:-80px; z-index:100;
+  background: var(--accent); color:#0B0E14; padding:10px 16px; border-radius: var(--radius-sm);
+  font-family: var(--font-display); font-size:.85rem; font-weight:600;
+}
+.skip-link:focus{ top:12px; }
+html[data-theme="light"] .skip-link{ color:#fff; }
+
+/* focus ที่มองเห็นได้ */
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline: 2px solid var(--accent); outline-offset: 3px;
+}
+.content-scroll:focus{ outline:none; }
+
+/* รูปโปรไฟล์แนวตั้ง: โฟกัสที่ใบหน้า */
+.hero-photo img{ object-position: 50% 18%; }
+
+.about-block{ margin-top: 56px; padding-top: 32px; border-top:1px solid var(--border); }
+.lead{ color: var(--text-dim); line-height:1.9; max-width: 72ch; margin:0; }
+.lead strong{ color: var(--text); font-weight:600; }
+
+/* ---- Projects: การ์ดกว้างแนวตั้ง ---- */
+.project-list{ display:flex; flex-direction:column; gap: 24px; }
+.project-list .project-card:hover{ transform:none; }
+.project-card{ padding: 26px 28px; scroll-margin-top: 24px; }
+.project-head{ display:flex; gap:18px; align-items:flex-start; margin-bottom: 18px; }
+.project-no{ font-family: var(--font-display); font-size:1.6rem; font-weight:800; color: var(--accent); line-height:1; padding-top:4px; }
+.project-head h3{ margin:0 0 8px; font-size:1.15rem; line-height:1.4; font-weight:600; }
+.project-meta{ margin:0; color: var(--text-dim); font-size:.84rem; line-height:1.6; }
+.tag-type{ color: var(--accent); border-color: var(--accent); margin-right:6px; }
+.project-body{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px 32px; margin:0 0 16px; padding:0; }
+.project-body dt{ font-family: var(--font-display); font-size:.7rem; color: var(--accent); margin-bottom:4px; }
+.project-body dd{ margin:0; font-size:.9rem; line-height:1.7; color: var(--text-dim); }
+.project-skills{ margin:0; padding-top:14px; border-top:1px solid var(--border); font-size:.82rem; color: var(--text-dim); line-height:1.8; }
+.project-skills a, .evidence a, .commit-msg small a{ color: var(--accent); }
+.project-skills a:hover, .evidence a:hover, .commit-msg small a:hover{ text-decoration: underline; }
+.project-link{ display:inline-block; margin-top:14px; font-family: var(--font-display); font-size:.82rem; color: var(--accent); }
+.project-link:hover{ text-decoration: underline; }
+
+/* ---- Skills ---- */
+.skill-groups{ display:flex; flex-direction:column; gap: 36px; }
+.group-title{ font-family: var(--font-display); font-size:.82rem; font-weight:500; color: var(--accent-2); margin: 0 0 14px; }
+.skill-list{ display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.skill-list li{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius-md); padding: 18px 20px; scroll-margin-top: 24px; }
+.skill-list h4{ margin:0 0 6px; font-size:1rem; font-weight:600; }
+.skill-list p{ margin:0 0 10px; font-size:.86rem; line-height:1.65; color: var(--text-dim); }
+.skill-list .evidence{ margin:0; padding-top:10px; border-top:1px dashed var(--border); font-size:.8rem; }
+
+/* ไฮไลต์เมื่อกดลิงก์หลักฐานมาถึง */
+.flash{ animation: flashBorder 1.6s ease; }
+@keyframes flashBorder{ 0%,60%{ border-color: var(--accent); box-shadow: 0 0 0 3px rgba(94,234,212,.25);} 100%{ box-shadow:none; } }
+
+/* ---- Experience ---- */
+.commit-log li{ scroll-margin-top: 24px; }
+.more-exp{ margin-top: 12px; padding-top: 14px; border-top:1px solid var(--border); }
+.more-exp summary{ cursor:pointer; font-family: var(--font-display); font-size:.82rem; color: var(--accent); }
+.more-exp ul{ margin-top:10px; }
+.more-exp li{ display:block; padding:10px 0; border:none; font-size:.84rem; color: var(--text-dim); line-height:1.65; }
+.more-exp li strong{ color: var(--text); font-weight:600; }
+
+/* ---- Contact (รายการลิงก์) ---- */
+.social-item small{ display:block; font-size:.68rem; color: var(--text-dim); margin-bottom:2px; }
+.social-static:hover{ border-color: var(--border); transform:none; }
+
+@media (max-width: 760px){
+  .project-body{ grid-template-columns: 1fr; }
+  .project-card{ padding: 20px; }
+  .skill-list{ grid-template-columns: 1fr; }
+}
