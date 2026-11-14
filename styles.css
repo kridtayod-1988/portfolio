@@ -130,7 +130,8 @@ h1{font-size:clamp(2.3rem,5.4vw,3.6rem);font-weight:800;line-height:1.3;margin-b
 .social-item{display:block;padding:16px 0;border-bottom:1px solid var(--border);word-break:break-all}
 a.social-item:hover{color:var(--accent)}
 .social-item small{display:block;font-size:.78rem;color:var(--text-dim)}
-.site-footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--border);color:var(--text-dim);font-size:.8rem}
+.site-footer p{margin:0}
+.site-footer{text-align:center;margin-top:64px;padding-top:20px;border-top:1px solid var(--border);color:var(--text-dim);font-size:.8rem}
 .flash{animation:flash 1.6s ease}
 @keyframes flash{0%,60%{box-shadow:0 0 0 3px var(--signal)}100%{box-shadow:none}}
 
