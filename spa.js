@@ -6,11 +6,11 @@
 (function () {
   const pages = document.querySelectorAll('.page');
   const pageIds = Array.from(pages).map(function (p) { return p.id; });
-  const navLinks = document.querySelectorAll('.file-item[data-target]');
-  const inlineLinks = document.querySelectorAll('a[data-target]:not(.file-item)');
+  const navLinks = document.querySelectorAll('.nav-link[data-target]');
+  const inlineLinks = document.querySelectorAll('a[data-target]:not(.nav-link)');
   const tabs = document.querySelectorAll('.tab');
   const gutter = document.getElementById('gutter');
-  const sidebar = document.getElementById('sidebar');
+  const sidebar = document.getElementById('site-nav');
   const menuToggle = document.getElementById('menuToggle');
   const content = document.getElementById('content');
   const skipLink = document.querySelector('[data-skip]');

@@ -12,75 +12,39 @@
 <meta property="og:image" content="https://kridtayod-1988.github.io/portfolio/assets/profile.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <a class="skip-link" href="#content" data-skip>ข้ามไปยังเนื้อหาหลัก</a>
 
-<header class="ide-topbar">
-  <div class="brand"><span class="brand-bracket">&lt;</span><span class="brand-name">KK</span><span class="brand-bracket">/&gt;</span></div>
-  <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button>
-</header>
+<header class="topbar"><div class="topbar-in">
+  <a class="brand" href="#home" data-target="home">กฤตยชญ์ กุลกลางดอน</a>
+  <nav class="site-nav" id="site-nav" aria-label="เมนูหลัก"><ul>
+    <li><a href="#home" class="nav-link active" data-target="home">หน้าแรก</a></li>
+    <li><a href="#projects" class="nav-link" data-target="projects">ผลงาน</a></li>
+    <li><a href="#skills" class="nav-link" data-target="skills">ทักษะ</a></li>
+    <li><a href="#experience" class="nav-link" data-target="experience">ประสบการณ์</a></li>
+    <li><a href="#contact" class="nav-link" data-target="contact">ติดต่อ</a></li>
+  </ul></nav>
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="สลับโหมดสว่าง/มืด"><span id="themeIcon">☾</span><span id="themeLabel">มืด</span></button>
+  <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+</div></header>
+<main id="main"><div class="content-scroll" id="content" tabindex="-1">
 
-<div class="ide-shell">
-
-  <nav class="sidebar" id="sidebar" aria-label="เมนูหลัก">
-    <div class="sidebar-brand">
-      <span class="brand-bracket">&lt;</span><span class="brand-name">KK</span><span class="brand-bracket">/&gt;</span>
-      <p class="sidebar-sub">// portfolio.md</p>
-    </div>
-    <ul class="file-tree">
-      <li><a href="#home" class="file-item active" data-target="home"><span class="file-icon">⚪</span>home.md</a></li>
-      <li><a href="#projects" class="file-item" data-target="projects"><span class="file-icon">⚪</span>projects.md</a></li>
-      <li><a href="#skills" class="file-item" data-target="skills"><span class="file-icon">⚪</span>skills.md</a></li>
-      <li><a href="#experience" class="file-item" data-target="experience"><span class="file-icon">⚪</span>experience.md</a></li>
-      <li><a href="#contact" class="file-item" data-target="contact"><span class="file-icon">⚪</span>contact.md</a></li>
-    </ul>
-    <div class="sidebar-footer">
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="สลับโหมดสว่าง/มืด">
-        <span class="theme-icon" id="themeIcon">☾</span><span id="themeLabel">Dark mode</span>
-      </button>
-      <p class="sidebar-hint"><span class="status-dot"></span> พร้อมเริ่มงานประจำ</p>
-    </div>
-  </nav>
-
-  <main class="editor-pane" id="main">
-    <div class="tab-strip" aria-hidden="true">
-      <span class="tab active" data-tab="home">home.md</span>
-      <span class="tab" data-tab="projects">projects.md</span>
-      <span class="tab" data-tab="skills">skills.md</span>
-      <span class="tab" data-tab="experience">experience.md</span>
-      <span class="tab" data-tab="contact">contact.md</span>
-    </div>
-
-    <div class="editor-body">
-      <div class="gutter" id="gutter" aria-hidden="true"></div>
-      <div class="content-scroll" id="content" tabindex="-1">
-
-        <!-- ============ HOME ============ -->
+<!-- ============ HOME ============ -->
         <section class="page active" id="home">
-          <div class="terminal-card reveal">
-            <div class="terminal-header">
-              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="terminal-title">zsh — ~/portfolio</span>
-            </div>
-            <div class="terminal-body" id="typewriter" aria-label="แนะนำตัวสั้น ๆ"></div>
-          </div>
-
           <div class="hero-grid reveal">
             <div class="hero-photo-frame">
-              <span class="frame-tag">&lt;profile /&gt;</span>
-              <div class="hero-photo">
+                            <div class="hero-photo">
                 <span class="avatar-initials">KK</span>
                 <!-- รูปโปรไฟล์: เปลี่ยนไฟล์ที่ assets/profile.jpg (ถ้าไม่พบไฟล์ จะแสดงตัวอักษรย่อแทน) -->
                 <img src="assets/profile.jpg" alt="รูปโปรไฟล์ กฤตยชญ์ กุลกลางดอน" width="796" height="1024" onerror="this.remove()">
               </div>
             </div>
             <div class="hero-text">
-              <p class="eyebrow">// Project Coordinator Portfolio</p>
-              <h1>กฤตยชญ์ กุลกลางดอน <span class="cursor-blink" aria-hidden="true">|</span></h1>
+                            <h1>กฤตยชญ์ กุลกลางดอน</h1>
               <p class="role">ผู้สมัครตำแหน่ง Project Coordinator (เจ้าหน้าที่ประสานงานโครงการ)</p>
               <p class="bio">
                 มีประสบการณ์ประสานงานและติดตามงานในโครงการภาครัฐ จัดทำรายงานส่งต่อผู้รับผิดชอบ
@@ -98,8 +62,17 @@
             </div>
           </div>
 
+          <section class="route" aria-label="ตำแหน่งในงานประสานงานแขวง">
+            <h2 class="route-title">อยู่ตรงกลางระหว่างหน้างานกับส่วนกลาง</h2>
+            <ol class="route-line">
+              <li><b>ผู้ปฏิบัติงานในแขวง</b><span>เก็บข้อมูลภาคสนาม</span></li>
+              <li class="me"><b>ผู้ประสานงานแขวง</b><span>แบ่งงาน · ติดตาม · ตรวจสอบ · ส่งมอบ</span></li>
+              <li><b>คณะกรรมการส่วนกลาง</b><span>วางแผนและรับมอบงาน</span></li>
+            </ol>
+            <p class="route-note">จากโครงการภาครัฐ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ ก.ค.–ก.ย. 2565 · <a href="#projects" data-target="projects" data-focus="project-district" class="evidence">ดูรายละเอียด</a></p>
+          </section>
+
           <div class="about-block reveal">
-            <p class="eyebrow">// เกี่ยวกับฉัน</p>
             <p class="lead">
               มีพื้นฐานด้าน<strong>รัฐศาสตร์</strong> (มหาวิทยาลัยรามคำแหง) สนใจงานด้าน<strong>การประสานงานและติดตามความคืบหน้าโครงการ</strong>
               มีทักษะการประสานงานกับหลายฝ่าย การแบ่งงานและติดตามงาน การจัดทำรายงาน และการสร้างเครื่องมือช่วยงานด้วย Google Apps Script
@@ -111,7 +84,6 @@
 
         <!-- ============ PROJECTS ============ -->
         <section class="page" id="projects">
-          <p class="eyebrow reveal">// projects.md</p>
           <h2 class="reveal">ผลงานเด่น</h2>
           <p class="section-sub reveal">คัดเฉพาะงานที่เกี่ยวข้องกับการประสานงานโครงการ แต่ละชิ้นแยกให้เห็นว่าส่วนไหนเป็นงานที่ทำเอง และส่วนไหนเป็นงานของทีม</p>
 
@@ -124,7 +96,6 @@
 
             <article class="project-card reveal" id="project-district">
               <header class="project-head">
-                <span class="project-no">01</span>
                 <div>
                   <h3>ผู้ประสานงานแขวง โครงการภาครัฐ</h3>
                   <p class="project-meta"><span class="tag tag-type">งานจริง</span> คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ บางเขน · ก.ค.–ก.ย. 2565</p>
@@ -143,7 +114,6 @@
 
             <article class="project-card reveal" id="project-housing">
               <header class="project-head">
-                <span class="project-no">02</span>
                 <div>
                   <h3>ติดตามและประสานงานปัญหาที่พักอาศัยในพื้นที่</h3>
                   <p class="project-meta"><span class="tag tag-type">งานจริง</span> บัณฑิตจบใหม่ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ บางเขน · ก.พ.–ธ.ค. 2564</p>
@@ -163,7 +133,6 @@
 
             <article class="project-card reveal" id="project-sso">
               <header class="project-head">
-                <span class="project-no">03</span>
                 <div>
                   <h3>SSO 1506 Simulator — ระบบจำลองการให้บริการข้อมูลประกันสังคม</h3>
                   <p class="project-meta"><span class="tag tag-type">Web App</span> สร้างด้วย Google Apps Script</p>
@@ -186,7 +155,6 @@
 
         <!-- ============ SKILLS ============ -->
         <section class="page" id="skills">
-          <p class="eyebrow reveal">// skills.md</p>
           <h2 class="reveal">ทักษะพร้อมหลักฐาน</h2>
           <p class="section-sub reveal">แต่ละทักษะเชื่อมกับงานที่ได้ใช้จริง กดลิงก์เพื่อดูรายละเอียดของงานนั้น</p>
 
@@ -265,11 +233,10 @@
 
         <!-- ============ EXPERIENCE ============ -->
         <section class="page" id="experience">
-          <p class="eyebrow reveal">// experience.md</p>
           <h2 class="reveal">ประสบการณ์ทำงาน</h2>
 
           <div class="commit-log reveal">
-            <p class="log-title">$ cat career.log</p>
+            
             <ul>
               <li id="exp-truetouch">
                 <span class="commit-hash">2568</span>
@@ -313,40 +280,30 @@
 
         <!-- ============ CONTACT ============ -->
         <section class="page" id="contact">
-          <p class="eyebrow reveal">// contact.md</p>
           <h2 class="reveal">ติดต่อ</h2>
           <p class="section-sub reveal">ยินดีพูดคุยเรื่องตำแหน่ง Project Coordinator และนัดสัมภาษณ์</p>
 
           <div class="contact-grid">
-            <form class="terminal-card reveal contact-form" id="contactForm">
-              <div class="terminal-header">
-                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="terminal-title">send-message.sh</span>
-              </div>
-              <div class="terminal-body">
-                <label class="prompt-line"><span class="prompt">$ name --set</span><input type="text" name="name" placeholder="ชื่อของคุณ / บริษัท" required></label>
-                <label class="prompt-line"><span class="prompt">$ message --set</span><textarea name="message" rows="4" placeholder="ตำแหน่งที่เปิดรับ หรือรายละเอียดที่อยากสอบถาม" required></textarea></label>
-                <button type="submit" class="btn btn-primary btn-block">$ send --submit</button>
+            <form class="contact-form" id="contactForm">
+              <div>
+                <label class="prompt-line"><span class="prompt">ชื่อของคุณ / บริษัท</span><input type="text" name="name" placeholder="เช่น ฝ่ายบุคคล บริษัท ..." required></label>
+                <label class="prompt-line"><span class="prompt">ข้อความ</span><textarea name="message" rows="4" placeholder="ตำแหน่งที่เปิดรับ หรือรายละเอียดที่อยากสอบถาม" required></textarea></label>
+                <button type="submit" class="btn btn-primary btn-block">เปิดอีเมลเพื่อส่งข้อความ</button>
                 <p class="form-note">กดแล้วจะเปิดแอปอีเมลของคุณพร้อมข้อความที่กรอก</p>
               </div>
             </form>
 
             <ul class="social-list reveal">
-              <li><a href="mailto:kunklangdon@gmail.com" class="social-item"><span class="file-icon">⚪</span><span><small>อีเมล</small>kunklangdon@gmail.com</span></a></li>
-              <li><a href="https://www.facebook.com/share/1CZ9ekqa8h/" class="social-item" target="_blank" rel="noopener noreferrer"><span class="file-icon">⚪</span><span><small>Facebook</small>ดูโปรไฟล์ ↗</span></a></li>
-              <li><a href="https://fastwork.co/user/kridtayod/questionnaire-72980395?utm_source=app_sharing" class="social-item" target="_blank" rel="noopener noreferrer"><span class="file-icon">⚪</span><span><small>Fastwork</small>ดูโปรไฟล์ฟรีแลนซ์ ↗</span></a></li>
-              <li class="social-item social-static"><span class="file-icon">⚪</span><span><small>พื้นที่</small>เขตจตุจักร กรุงเทพฯ</span></li>
+              <li><a href="mailto:kunklangdon@gmail.com" class="social-item"><span><small>อีเมล</small>kunklangdon@gmail.com</span></a></li>
+              <li><a href="https://www.facebook.com/share/1CZ9ekqa8h/" class="social-item" target="_blank" rel="noopener noreferrer"><span><small>Facebook</small>ดูโปรไฟล์ ↗</span></a></li>
+              <li><a href="https://fastwork.co/user/kridtayod/questionnaire-72980395?utm_source=app_sharing" class="social-item" target="_blank" rel="noopener noreferrer"><span><small>Fastwork</small>ดูโปรไฟล์ฟรีแลนซ์ ↗</span></a></li>
+              <li class="social-item social-static"><span><small>พื้นที่</small>เขตจตุจักร กรุงเทพฯ</span></li>
             </ul>
           </div>
         </section>
 
-        <footer class="site-footer">
-          <p>// สร้างด้วย HTML · CSS · JavaScript ล้วน — โฮสต์บน GitHub Pages</p>
-        </footer>
-      </div>
-    </div>
-  </main>
-</div>
+        <footer class="site-footer"><p>สร้างด้วย HTML · CSS · JavaScript ล้วน โฮสต์บน GitHub Pages</p></footer>
+</div></main>
 
 <script src="spa.js"></script>
 <script src="main.js"></script>

@@ -4,15 +4,7 @@
 
 // แก้ข้อมูลติดต่อและข้อความ terminal ได้ตรงนี้
 const CONFIG = {
-  email: 'kunklangdon@gmail.com',
-  terminalLines: [
-    { text: '$ whoami', kind: 'prompt' },
-    { text: '> กฤตยชญ์ กุลกลางดอน', kind: 'out' },
-    { text: '$ target --position', kind: 'prompt' },
-    { text: '> Project Coordinator · เจ้าหน้าที่ประสานงานโครงการ', kind: 'out' },
-    { text: '$ skills --top', kind: 'prompt' },
-    { text: '> ประสานงาน · ติดตามงาน · รายงาน · Google Apps Script', kind: 'out' }
-  ]
+  email: 'kunklangdon@gmail.com'
 };
 
 /* ---------- 1) Dark / Light mode ---------- */
@@ -29,7 +21,7 @@ const CONFIG = {
   function apply(theme) {
     root.setAttribute('data-theme', theme);
     if (icon) icon.textContent = theme === 'dark' ? '☾' : '☀';
-    if (label) label.textContent = theme === 'dark' ? 'Dark mode' : 'Light mode';
+    if (label) label.textContent = theme === 'dark' ? 'มืด' : 'สว่าง';
   }
 
   const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
@@ -42,50 +34,6 @@ const CONFIG = {
       write(next);
     });
   }
-})();
-
-/* ---------- 2) Typewriter ใน terminal หน้าแรก ---------- */
-(function typewriter() {
-  const box = document.getElementById('typewriter');
-  if (!box) return;
-
-  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const caret = document.createElement('span');
-  caret.className = 'caret';
-  caret.textContent = '▋';
-
-  // สร้างบรรทัดทั้งหมดไว้ก่อน แล้วค่อย ๆ เติมตัวอักษร
-  const nodes = CONFIG.terminalLines.map(function (l) {
-    const el = document.createElement('span');
-    el.className = 'line ' + l.kind;
-    box.appendChild(el);
-    return el;
-  });
-
-  if (reduce) {
-    CONFIG.terminalLines.forEach(function (l, i) { nodes[i].textContent = l.text; });
-    nodes[nodes.length - 1].appendChild(caret);
-    return;
-  }
-
-  let line = 0, ch = 0;
-  function tick() {
-    if (line >= CONFIG.terminalLines.length) return;
-    const full = CONFIG.terminalLines[line].text;
-    const chars = Array.from(full); // รองรับตัวอักษรไทยที่มีสระ/วรรณยุกต์
-    ch++;
-    nodes[line].textContent = chars.slice(0, ch).join('');
-    nodes[line].appendChild(caret);
-
-    if (ch >= chars.length) {
-      line++; ch = 0;
-      // บรรทัดคำสั่ง ($) พิมพ์เสร็จแล้วหน่วงเล็กน้อยก่อนขึ้นผลลัพธ์
-      setTimeout(tick, CONFIG.terminalLines[line - 1].kind === 'prompt' ? 280 : 160);
-    } else {
-      setTimeout(tick, 22);
-    }
-  }
-  setTimeout(tick, 350);
 })();
 
 /* ---------- 3) สื่อผลงาน: รูปภาพ / วิดีโอ ----------
