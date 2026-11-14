@@ -85,7 +85,8 @@ h1{font-size:clamp(2.3rem,5.4vw,3.6rem);font-weight:800;line-height:1.3;margin-b
 
 /* PROJECTS */
 .project-list{display:flex;flex-direction:column;gap:20px}
-.project-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:4px;padding:28px 32px;scroll-margin-top:90px;box-shadow:var(--shadow)}
+.project-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;position:relative;overflow:hidden;padding:28px 32px;scroll-margin-top:90px;box-shadow:var(--shadow)}
+.project-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent)}
 .project-head{margin-bottom:20px}
 .project-head h3{font-size:1.2rem;font-weight:700;margin-bottom:8px}
 .project-meta{margin:0;color:var(--text-dim);font-size:.88rem}
