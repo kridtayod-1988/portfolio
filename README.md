@@ -1,4 +1,4 @@
-# Project Coordinator Portfolio — กฤตยชญ์ กุลกลางดอน
+# Project Portfolio
 
 เว็บพอร์ตโฟลิโอหน้าเดียว (SPA) สำหรับสมัครตำแหน่ง **Project Coordinator (เจ้าหน้าที่ประสานงานโครงการ)**
 เขียนด้วย HTML · CSS · JavaScript ล้วน ไม่มี build step ไม่ใช้เฟรมเวิร์ก ไม่มี Analytics ไม่ใช้คุกกี้
